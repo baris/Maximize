@@ -13,6 +13,7 @@
 		831EFE2E14FEAB6300B9FF3D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 831EFE2C14FEAB6300B9FF3D /* Credits.rtf */; };
 		831EFE3114FEAB6300B9FF3D /* MaximizeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EFE3014FEAB6300B9FF3D /* MaximizeAppDelegate.m */; };
 		831EFE3414FEAB6400B9FF3D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831EFE3214FEAB6400B9FF3D /* MainMenu.xib */; };
+		83C744FF15004C6E0013AA45 /* max.png in Resources */ = {isa = PBXBuildFile; fileRef = 83C744FE15004C6E0013AA45 /* max.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +22,16 @@
 		831EFE2014FEAB6300B9FF3D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		831EFE2114FEAB6300B9FF3D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		831EFE2214FEAB6300B9FF3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		831EFE2514FEAB6300B9FF3D /* Maximize-Info.plist */ = {isa = PBXFileReference; path = "Maximize-Info.plist"; sourceTree = "<group>"; };
+		831EFE2514FEAB6300B9FF3D /* Maximize-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Maximize-Info.plist"; sourceTree = "<group>"; };
 		831EFE2714FEAB6300B9FF3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		831EFE2914FEAB6300B9FF3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		831EFE2B14FEAB6300B9FF3D /* Maximize-Prefix.pch */ = {isa = PBXFileReference; path = "Maximize-Prefix.pch"; sourceTree = "<group>"; };
+		831EFE2B14FEAB6300B9FF3D /* Maximize-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Maximize-Prefix.pch"; sourceTree = "<group>"; };
 		831EFE2D14FEAB6300B9FF3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		831EFE2F14FEAB6300B9FF3D /* MaximizeAppDelegate.h */ = {isa = PBXFileReference; path = MaximizeAppDelegate.h; sourceTree = "<group>"; };
+		831EFE2F14FEAB6300B9FF3D /* MaximizeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaximizeAppDelegate.h; sourceTree = "<group>"; };
 		831EFE3014FEAB6300B9FF3D /* MaximizeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaximizeAppDelegate.m; sourceTree = "<group>"; };
 		831EFE3314FEAB6400B9FF3D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		831EFE3A14FEAB7100B9FF3D /* Maximize.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Maximize.entitlements; sourceTree = "<group>"; };
+		83C744FE15004C6E0013AA45 /* max.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = max.png; path = ../max.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		831EFE2314FEAB6300B9FF3D /* Maximize */ = {
 			isa = PBXGroup;
 			children = (
+				831EFE3A14FEAB7100B9FF3D /* Maximize.entitlements */,
 				831EFE2F14FEAB6300B9FF3D /* MaximizeAppDelegate.h */,
 				831EFE3014FEAB6300B9FF3D /* MaximizeAppDelegate.m */,
 				831EFE3214FEAB6400B9FF3D /* MainMenu.xib */,
@@ -93,6 +97,7 @@
 		831EFE2414FEAB6300B9FF3D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83C744FE15004C6E0013AA45 /* max.png */,
 				831EFE2514FEAB6300B9FF3D /* Maximize-Info.plist */,
 				831EFE2614FEAB6300B9FF3D /* InfoPlist.strings */,
 				831EFE2914FEAB6300B9FF3D /* main.m */,
@@ -156,6 +161,7 @@
 				831EFE2814FEAB6300B9FF3D /* InfoPlist.strings in Resources */,
 				831EFE2E14FEAB6300B9FF3D /* Credits.rtf in Resources */,
 				831EFE3414FEAB6400B9FF3D /* MainMenu.xib in Resources */,
+				83C744FF15004C6E0013AA45 /* max.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +295,7 @@
 				831EFE3914FEAB6400B9FF3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
