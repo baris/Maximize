@@ -84,7 +84,7 @@ void windowListApplierFunction(const void *inputDictionary, void *context)
 }
 
 
-- (void)runEventStateWithMouseDelta
+- (void)handleEventStates
 {
     if (self.currentEventState == STATE_OTHER || self.currentEventState == STATE_UNKNOWN) {
         self.mouseLocation = [NSEvent mouseLocation];
