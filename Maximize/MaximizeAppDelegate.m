@@ -97,6 +97,13 @@ void windowListApplierFunction(const void *inputDictionary, void *context)
     deltaX = currentMouseLocation.x - self.mouseLocation.x;
     deltaY = -(currentMouseLocation.y - self.mouseLocation.y);
     self.mouseLocation = currentMouseLocation;
+    
+//    NSArray *supportedAttributes = [self.activeWindow accessibilityAttributeNames];
+//    NSLog(@"%@", supportedAttributes);
+//    if ([supportedAttributes containsObject:NSAccessibilitySizeAttribute]) {
+//        [self.activeWindow accessibilitySetValue:[NSValue valueWithRect:NSMakeRect(100,100,200,200)] forAttribute:NSAccessibilitySizeAttribute];  
+//        return;
+//    }
 
     NSString *script = @"tell application \"Finder\"\n"
     "set screen_resolution to bounds of window of desktop\n"
@@ -106,7 +113,7 @@ void windowListApplierFunction(const void *inputDictionary, void *context)
     if (self.currentEventState == STATE_MAXIMIZE) {
         script = [NSString stringWithFormat:@"%@\n"
                   "tell application \"%@\"\n"
-                  "set the bounds of the first window to screen_resolution\n"
+                  "set the bounds of the first window to {0,0, screen_width, screen_height}\n"
                   "end tell\n", script, self.activeApplication];
     } else if (self.currentEventState == STATE_LEFT) {
         script = [NSString stringWithFormat:@"%@\n"
@@ -139,7 +146,7 @@ void windowListApplierFunction(const void *inputDictionary, void *context)
                   "set the bounds of the first window to {x+%d,y+%d,width+%d,height+%d}\n"
                   "end tell\n", script, self.activeApplication, deltaX, deltaY, deltaX, deltaY];
     }
-//    NSLog(@"%@", script);
+//      NSLog(@"%@", script);
     NSAppleScript *eventScript = [[NSAppleScript alloc] initWithSource:script];
     [eventScript executeAndReturnError:nil];
 
