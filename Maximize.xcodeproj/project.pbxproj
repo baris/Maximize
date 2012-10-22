@@ -134,7 +134,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Maximize;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = 831EFE1314FEAB6300B9FF3D /* Build configuration list for PBXProject "Maximize" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -257,6 +257,7 @@
 		831EFE3814FEAB6400B9FF3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maximize/Maximize-Prefix.pch";
 				INFOPLIST_FILE = "Maximize/Maximize-Info.plist";
@@ -268,6 +269,7 @@
 		831EFE3914FEAB6400B9FF3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maximize/Maximize-Prefix.pch";
 				INFOPLIST_FILE = "Maximize/Maximize-Info.plist";
